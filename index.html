@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Personal Portfolio of Anuj P. - Full Stack Developer and Software Engineer. Showcase of projects, technical skills, and contact information.">
+    <title>Anuj P. | Full Stack Developer & Software Engineer Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <div class="nav-container">
+            <a href="#home" class="logo" id="logo-link">
+                Anuj's Portfolio
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active" id="nav-home">Home</a></li>
+                    <li><a href="#about" class="nav-link" id="nav-about">About</a></li>
+                    <li><a href="#skills" class="nav-link" id="nav-skills">Skills</a></li>
+                    <li><a href="#projects" class="nav-link" id="nav-projects">Projects</a></li>
+                    <li><a href="#contact" class="nav-link" id="nav-contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark theme">
+                    <i class="fa-solid fa-moon" id="theme-icon"></i>
+                </button>
+                <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Open navigation menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero section" id="home">
+            <div class="hero-glow"></div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="hero-subtitle animate-on-scroll">Welcome to my space</span>
+                    <h1 class="hero-title animate-on-scroll">Hi, I'm <span class="text-gradient">Anuj Patel</span></h1>
+                    <h2 class="hero-typewriter animate-on-scroll">I build <span id="typewriter-text"
+                            class="typewriter-accent"></span><span class="typewriter-cursor">|</span></h2>
+                    <p class="hero-description animate-on-scroll">
+                        A passionate Software Engineer dedicated to crafting robust backends and premium, interactive
+                        frontend user interfaces. Specializing in Python, Java, and modern web architectures.
+                    </p>
+                    <div class="hero-actions animate-on-scroll">
+                        <a href="#projects" class="btn btn-primary" id="hero-btn-projects">View Projects <i
+                                class="fa-solid fa-arrow-down-long"></i></a>
+                        <a href="#contact" class="btn btn-secondary" id="hero-btn-contact">Get In Touch</a>
+                    </div>
+                    <div class="hero-socials animate-on-scroll">
+                        <a href="https://github.com/Anujpatel32" target="_blank" rel="noopener noreferrer"
+                            class="social-link" aria-label="GitHub Profile" id="hero-github">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/anuj-patel-6b30ba308/" target="_blank"
+                            rel="noopener noreferrer" class="social-link" aria-label="LinkedIn Profile"
+                            id="hero-linkedin">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:anujpatel6260@gmail.com" class="social-link" aria-label="Send Email"
+                            id="hero-email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-image-wrapper animate-on-scroll">
+                    <div class="image-border-glow"></div>
+                    <div class="hero-image-container">
+                        <img src="assets/profile.jpg" alt="Anuj Patel Portrait" class="hero-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Discovery</span>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-text animate-on-scroll">
+                        <h3>Who I Am</h3>
+                        <p>
+                            I am a software developer based in India, with a deep interest in software engineering,
+                            backend databases, and human-computer interactions. I enjoy transforming complex problems
+                            into clean, high-performance, and intuitive solutions.
+                        </p>
+                        <p>
+                            My approach combines structured backend planning (with robust languages like Java and
+                            Python) and visually arresting frontends. I focus on writing clean, scalable code and
+                            delivering exceptional user experiences.
+                        </p>
+
+                        <div class="about-details">
+                            <div class="detail-item">
+                                <span class="detail-label"><i class="fa-solid fa-location-dot"></i> Location:</span>
+                                <span class="detail-val">India</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label"><i class="fa-solid fa-envelope"></i> Email:</span>
+                                <span class="detail-val"><a
+                                        href="mailto:anujpatel6260@gmail.com">anujpatel6260@gmail.com</a></span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label"><i class="fa-solid fa-briefcase"></i> Availability:</span>
+                                <span class="detail-val">Open for Opportunities</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-pillars animate-on-scroll">
+                        <div class="pillar-card">
+                            <div class="pillar-icon-box"><i class="fa-solid fa-cube"></i></div>
+                            <h4>Clean Architecture</h4>
+                            <p>Writing structured, modular Java and Python backends following standard OOP patterns and
+                                SOLID principles.</p>
+                        </div>
+                        <div class="pillar-card">
+                            <div class="pillar-icon-box"><i class="fa-solid fa-database"></i></div>
+                            <h4>Database Engineering</h4>
+                            <p>Designing relational SQL schemas with connections pooling, indexation, and transaction
+                                security controls.</p>
+                        </div>
+                        <div class="pillar-card">
+                            <div class="pillar-icon-box"><i class="fa-solid fa-compass-drafting"></i></div>
+                            <h4>Interactive UI Design</h4>
+                            <p>Constructing responsive user interfaces with premium styling systems, smooth transitions,
+                                and fluid grid layouts.</p>
+                        </div>
+                        <div class="pillar-card">
+                            <div class="pillar-icon-box"><i class="fa-solid fa-gears"></i></div>
+                            <h4>System Automation</h4>
+                            <p>Developing scripts and voice modules (like Anka Assistant) to automate workflows and
+                                desktop processes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills section" id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Expertise</span>
+                    <h2 class="section-title">My Technical Toolbox</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Languages -->
+                    <div class="skills-category animate-on-scroll">
+                        <div class="category-header">
+                            <i class="fa-solid fa-code-branch"></i>
+                            <h3>Languages</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Python</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" style="width: 0%;" data-width="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Java</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" style="width: 0%;" data-width="85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">JavaScript (ES6+)</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" style="width: 0%;" data-width="80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">SQL</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" style="width: 0%;" data-width="85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Web Technologies -->
+                    <div class="skills-category animate-on-scroll">
+                        <div class="category-header">
+                            <i class="fa-solid fa-layer-group"></i>
+                            <h3>Web & Backend</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">HTML5 / CSS3</span>
+                                    <span class="skill-percentage">95%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" style="width: 0%;" data-width="95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Responsive Design</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" style="width: 0%;" data-width="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">API Integration</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" style="width: 0%;" data-width="80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Node.js Basics</span>
+                                    <span class="skill-percentage">65%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" style="width: 0%;" data-width="65%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools & Frameworks -->
+                    <div class="skills-category animate-on-scroll">
+                        <div class="category-header">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                            <h3>Tools & Databases</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Git & GitHub</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" style="width: 0%;" data-width="85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">MySQL / SQLite</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" style="width: 0%;" data-width="80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Maven</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" style="width: 0%;" data-width="75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">VS Code / Eclipse</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" style="width: 0%;" data-width="90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects section" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Showcase</span>
+                    <h2 class="section-title">Featured Creations</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <!-- Filter Buttons -->
+                <div class="projects-filter animate-on-scroll">
+                    <button class="filter-btn active" data-filter="all" id="filter-all">All Projects</button>
+                    <button class="filter-btn" data-filter="python" id="filter-python">Python</button>
+                    <button class="filter-btn" data-filter="java" id="filter-java">Java</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid">
+                    <!-- Project 1: Anka Personal Assistant -->
+                    <div class="project-card animate-on-scroll" data-category="python" id="project-card-anka">
+                        <div class="project-image-box">
+                            <div class="project-badge">Python</div>
+                            <div class="project-overlay">
+                                <button class="btn btn-small btn-modal-trigger" data-project="anka"
+                                    id="trigger-anka">Explore Details <i class="fa-solid fa-expand"></i></button>
+                            </div>
+                            <div class="project-img-placeholder">
+                                <i class="fa-solid fa-robot"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Anka Personal Assistant</h3>
+                            <p class="project-summary">An intelligent, voice-activated desktop personal assistant
+                                designed to automate daily routines and execute actions via voice commands.</p>
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">SpeechRecognition</span>
+                                <span class="tag">pyttsx3</span>
+                                <span class="tag">APIs</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Library Management System -->
+                    <div class="project-card animate-on-scroll" data-category="java" id="project-card-library">
+                        <div class="project-image-box">
+                            <div class="project-badge">Java</div>
+                            <div class="project-overlay">
+                                <button class="btn btn-small btn-modal-trigger" data-project="library"
+                                    id="trigger-library">Explore Details <i class="fa-solid fa-expand"></i></button>
+                            </div>
+                            <div class="project-img-placeholder">
+                                <i class="fa-solid fa-book-bookmark"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Library Management System</h3>
+                            <p class="project-summary">A robust Maven-based Java application managing book inventories,
+                                member checkouts, and system logs with a relational DB backend.</p>
+                            <div class="project-tags">
+                                <span class="tag">Java</span>
+                                <span class="tag">SQL / SQLite</span>
+                                <span class="tag">Maven</span>
+                                <span class="tag">JDBC</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Student Management System -->
+                    <div class="project-card animate-on-scroll" data-category="java" id="project-card-student">
+                        <div class="project-image-box">
+                            <div class="project-badge">Java</div>
+                            <div class="project-overlay">
+                                <button class="btn btn-small btn-modal-trigger" data-project="student"
+                                    id="trigger-student">Explore Details <i class="fa-solid fa-expand"></i></button>
+                            </div>
+                            <div class="project-img-placeholder">
+                                <i class="fa-solid fa-user-graduate"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Student Management System</h3>
+                            <p class="project-summary">An administrative utility for indexing student profiles, course
+                                enrollments, grade metrics, and transactional fee databases.</p>
+                            <div class="project-tags">
+                                <span class="tag">Java</span>
+                                <span class="tag">Database Design</span>
+                                <span class="tag">SQL</span>
+                                <span class="tag">CRUD</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Contact</span>
+                    <h2 class="section-title">Contact Me</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info animate-on-scroll">
+                        <h3>Let's create something great together</h3>
+                        <p>
+                            Whether you have an interesting project idea, want to discuss a software engineering role,
+                            or just want to connect, feel free to reach out. I will get back to you as soon as possible!
+                        </p>
+
+                        <div class="info-list">
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="info-details">
+                                    <h4>Email Me</h4>
+                                    <p><a href="mailto:anujpatel6260@gmail.com">anujpatel6260@gmail.com</a></p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="info-details">
+                                    <h4>Location</h4>
+                                    <p>India</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-socials-box">
+                            <h4>Find me on social channels</h4>
+                            <div class="contact-socials">
+                                <a href="https://github.com/Anujpatel32" target="_blank" rel="noopener noreferrer"
+                                    aria-label="GitHub" id="contact-github"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/anuj-patel-6b30ba308/" target="_blank"
+                                    rel="noopener noreferrer" aria-label="LinkedIn" id="contact-linkedin"><i
+                                        class="fa-brands fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-box animate-on-scroll">
+                        <form class="contact-form" id="contact-form" novalidate>
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" class="form-input" placeholder=" " required>
+                                <label for="name" class="form-label">Full Name</label>
+                                <span class="error-msg" id="name-error">Please enter your name</span>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" class="form-input" placeholder=" " required>
+                                <label for="email" class="form-label">Email Address</label>
+                                <span class="error-msg" id="email-error">Please enter a valid email</span>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="subject" name="subject" class="form-input" placeholder=" "
+                                    required>
+                                <label for="subject" class="form-label">Subject</label>
+                                <span class="error-msg" id="subject-error">Please enter a subject</span>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" class="form-input" placeholder=" " rows="5"
+                                    required></textarea>
+                                <label for="message" class="form-label">Your Message</label>
+                                <span class="error-msg" id="message-error">Please enter your message</span>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">
+                                Send Message <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p class="footer-thankyou">Thank you for visiting ✨</p>
+            <p class="copyright">&copy; 2026 Anuj Patel. All rights reserved.</p>
+            <a href="#home" class="scroll-top-btn" id="scroll-top-btn" aria-label="Scroll back to top">
+                <i class="fa-solid fa-chevron-up"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Interactive Projects Details Modal -->
+    <div class="modal-overlay" id="project-modal">
+        <div class="modal-card">
+            <button class="modal-close" id="modal-close" aria-label="Close details popup">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="modal-content-wrapper" id="modal-project-details">
+                <!-- Content injected dynamically via JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification Success Message -->
+    <div class="toast-container" id="toast-container">
+        <div class="toast-card">
+            <div class="toast-icon"><i class="fa-solid fa-circle-check"></i></div>
+            <div class="toast-body">
+                <h4 class="toast-title">Message Sent!</h4>
+                <p class="toast-desc">Thank you. I'll get back to you shortly.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
